@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08111f">
+  <meta name="author" content="Ratish Nair">
+  <meta name="description" content="Why relentless interrogation during design sessions should produce ADRs and glossaries as a byproduct, not separate work.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Grill-with-Docs: Making Planning and Documentation Inseparable">
+  <meta property="og:description" content="Why relentless interrogation during design sessions should produce ADRs and glossaries as a byproduct, not separate work.">
+  <meta property="og:url" content="https://ratishnair.co.in/blog/grill-with-docs-planning-and-documentation.html">
+  <meta property="og:image" content="https://ratishnair.co.in/blog/og/grill-with-docs-planning-and-documentation.png">
+  <meta property="og:image:alt" content="Grill-with-Docs: Making Planning and Documentation Inseparable">
+  <meta property="article:published_time" content="2026-07-01">
+  <meta property="article:author" content="Ratish Nair">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+  <link rel="icon" href="/icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Grill-with-Docs: Making Planning and Documentation Inseparable | Ratish Nair</title>
+</head>
+
+<body>
+  <header class="nav">
+    <a class="brand" href="/">RN</a>
+    <nav aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/#experience">Experience</a>
+      <a href="/#skills">Skills</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button id="theme" class="theme-btn" type="button" aria-label="Toggle dark mode">◐</button>
+  </header>
+
+  <main id="top">
+    <article class="blog-post">
+      <div class="blog-header">
+        <img src="/blog/og/grill-with-docs-planning-and-documentation.png" alt="Grill-with-Docs: Making Planning and Documentation Inseparable" class="blog-hero-image" loading="lazy">
+        <p class="blog-meta">July 1, 2026 · Grill-with-Docs: Making Planning and Documentation Inseparable</p>
+        <h1>Grill-with-Docs: Making Planning and Documentation Inseparable</h1>
+        <p class="blog-summary">Why relentless interrogation during design sessions should produce ADRs and glossaries as a byproduct, not separate work.</p>
+      </div>
+      <div class="blog-content">
+        <h2>The Documentation Deference Problem</h2><p>Here's how most planning sessions go:</p><p>You discuss the design. You nod along. You approve it. Then someone says, "We should document this," and that work gets deferred. A week later, nobody remembers why certain decisions were made. Three months later, someone asks, "Wait, why did we choose this approach?" and the only answer is a two-line commit message.</p><p>This isn't a discipline problem. It's a workflow problem. Documentation doesn't happen after planning—it never happens at all.</p><h2>What Grill-with-Docs Does</h2><p>Matt Pocock's skill flips the workflow. Instead of planning then documenting, it <em>grills while documenting</em>.</p><p>During the design interrogation, the skill simultaneously:</p><ul><li>Asks relentless questions: What happens if X? Have you considered Y? What breaks if Z?</li><li>Surfaces assumptions: Why this database? Why not that one? What's the trade-off?</li><li>Forces precision: Vague terms become precise. Hasty decisions get stress-tested.</li><li>Writes artifacts: Architecture Decision Records. Domain glossary. Deployment model. All emerge as byproducts.</li></ul><p>By the time the session ends, you haven't just made better decisions—you've also produced the reference documentation that will explain those decisions to the next person reading the code.</p><h2>Why This Works</h2><p>Documentation is hardest to write weeks after the decision. You've moved on. Context has evaporated. You're reconstructing from memory instead of capturing from thought.</p><p>But in the heat of the decision, when you're defending your choice against hard questions, you're doing the intellectual work that documentation <em>should</em> capture. The insight worth stealing: <strong>documentation is most useful when written in the moment of maximum understanding</strong>.</p><h2>The Deeper Lesson</h2><p>Most teams treat documentation and planning as sequential: plan first, document later. But planning <em>is</em> the documentation work—it's just happening in a conversation instead of in prose. Collapsing that gap is the optimization.</p><p>The specific tool isn't the point. The principle is: wherever decisions crystallize, documentation should crystallize alongside them. Make that automatic, and you've solved the documentation debt problem that haunts every engineering organization.</p>
+      </div>
+      <div class="blog-nav">
+        <a class="blog-nav-prev" href="/blog/microsoft-apm-agent-package-manager.html">← Microsoft APM: Package Management for AI Agents</a>
+        <a class="blog-nav-home" href="/blog/">Back to Blog</a>
+        <a class="blog-nav-next" href="/blog/microservices-observability.html">Microservices Observability: Three Levels of Insight →</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>© <span id="year"></span> Ratish Nair</footer>
+  <script src="/app.js"></script>
+</body>
+
+</html>

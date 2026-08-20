@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08111f">
+  <meta name="author" content="Ratish Nair">
+  <meta name="description" content="Logs, metrics, and traces. Why you need all three, and how to pick the right tools for healthcare systems at scale.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Microservices Observability: Three Levels of Insight">
+  <meta property="og:description" content="Logs, metrics, and traces. Why you need all three, and how to pick the right tools for healthcare systems at scale.">
+  <meta property="og:url" content="https://ratishnair.co.in/blog/microservices-observability.html">
+  <meta property="og:image" content="https://ratishnair.co.in/blog/og/microservices-observability.png">
+  <meta property="og:image:alt" content="Microservices Observability: Three Levels of Insight">
+  <meta property="article:published_time" content="2026-06-20">
+  <meta property="article:author" content="Ratish Nair">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+  <link rel="icon" href="/icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Microservices Observability: Three Levels of Insight | Ratish Nair</title>
+</head>
+
+<body>
+  <header class="nav">
+    <a class="brand" href="/">RN</a>
+    <nav aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/#experience">Experience</a>
+      <a href="/#skills">Skills</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button id="theme" class="theme-btn" type="button" aria-label="Toggle dark mode">◐</button>
+  </header>
+
+  <main id="top">
+    <article class="blog-post">
+      <div class="blog-header">
+        <img src="/blog/og/microservices-observability.png" alt="Microservices Observability: Three Levels of Insight" class="blog-hero-image" loading="lazy">
+        <p class="blog-meta">June 20, 2026 · Microservices Observability: Three Levels of Insight</p>
+        <h1>Microservices Observability: Three Levels of Insight</h1>
+        <p class="blog-summary">Logs, metrics, and traces. Why you need all three, and how to pick the right tools for healthcare systems at scale.</p>
+      </div>
+      <div class="blog-content">
+        <h2>The Observability Problem</h2><p>In a microservices architecture, a single user action can span ten services. When something breaks, logging alone will not cut it—you need to see the full context across boundaries.</p><p>Most teams start with logs. They are easy, cheap, and feel complete. Then at 3 AM, when a payment service is slow, you realize you cannot answer: Which service caused the delay? That is when you need <strong>metrics</strong>. Then you add <strong>traces</strong>, and suddenly the fog lifts.</p><h2>The Three Pillars</h2><h3>1. Logs</h3><p>Raw events. Who did what, when. Best for: understanding <em>what happened</em> at a specific moment.</p><h3>2. Metrics</h3><p>Aggregated signals. Request latency, error rate, queue depth. Best for: seeing <em>patterns</em> and <em>trends</em>.</p><h3>3. Traces</h3><p>The flow. A single request journey across services. Best for: debugging <em>why</em> something took 5 seconds instead of 50ms.</p><h2>Practical Setup</h2><p>For healthcare systems, I recommend:</p><ul><li><strong>Structured logging</strong> (JSON) to cloud storage (S3/Blob) for compliance and audit</li><li><strong>Metrics</strong> to Prometheus-compatible backend (CloudWatch, DataDog) for real-time alerting</li><li><strong>Traces</strong> to OpenTelemetry + Jaeger or similar. Sample at 5-10% in production.</li></ul><p>One last thing: <strong>correlation IDs</strong> are your friend. They tie logs, metrics, and traces together across service boundaries.</p>
+      </div>
+      <div class="blog-nav">
+        <a class="blog-nav-prev" href="/blog/grill-with-docs-planning-and-documentation.html">← Grill-with-Docs: Making Planning and Documentation Inseparable</a>
+        <a class="blog-nav-home" href="/blog/">Back to Blog</a>
+        <a class="blog-nav-next" href="/blog/spec-driven-development-dotnet.html">Spec-Driven Development →</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>© <span id="year"></span> Ratish Nair</footer>
+  <script src="/app.js"></script>
+</body>
+
+</html>

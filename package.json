@@ -1,0 +1,19 @@
+{
+  "name": "ratish-nair-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio site with blog",
+  "main": "app.js",
+  "scripts": {
+    "build:blog": "node build-blog.js",
+    "build": "npm run build:blog",
+    "dev": "npm run build:blog && python -m http.server 8000"
+  },
+  "keywords": [
+    ".NET",
+    "microservices",
+    "healthcare",
+    "portfolio"
+  ],
+  "author": "Ratish Nair",
+  "license": "MIT"
+}

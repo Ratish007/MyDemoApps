@@ -13,6 +13,18 @@ const CORE_ASSETS = [
   "/icons/apple-touch-icon.png",
   "/icons/favicon-32.png",
   "/icons/og-image-1200x630.png",
+  "/blog/",
+  "/blog/index.html",
+  "/blog/agentic-workflow-design.html",
+  "/blog/microsoft-apm-agent-package-manager.html",
+  "/blog/grill-with-docs-planning-and-documentation.html",
+  "/blog/microservices-observability.html",
+  "/blog/spec-driven-development-dotnet.html",
+  "/blog/og/agentic-workflow-design.png",
+  "/blog/og/microsoft-apm-agent-package-manager.png",
+  "/blog/og/grill-with-docs-planning-and-documentation.png",
+  "/blog/og/microservices-observability.png",
+  "/blog/og/spec-driven-development-dotnet.png",
 ]
 
 self.addEventListener("install", (event) => {

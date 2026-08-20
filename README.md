@@ -36,6 +36,37 @@ No server, database, framework or build step is required.
 - LinkedIn link
 - Email contact
 
+## Blog Content
+
+`blogs.json` is the single source of truth for every post. Edit a post there,
+including its title, date, summary, image path, and HTML body, then run:
+
+```powershell
+npm run build:blog
+```
+
+The build validates required fields, duplicate IDs and slugs, dates, and image
+paths before generating `blog/index.html`, the post pages, and the service-worker
+cache entries. Generated files under `blog/` should not be edited manually.
+
+### How to Add a New Blog
+
+1. Add a new object to the `posts` array in `blogs.json`.
+2. Use the next unused numeric `id` and a unique lowercase hyphenated `slug`.
+3. Set `date` to `YYYY-MM-DD`, then add the `title`, `summary`, and HTML `body`.
+4. Add the hero image under `blog/og/` and set `ogImage` to its site path, for example `/blog/og/my-new-post.png`.
+5. Run the build and review the generated page:
+
+   ```powershell
+   npm run build:blog
+   ```
+
+6. Open `http://localhost:8000/blog/my-new-post.html` locally and check the title, image, links, and mobile layout.
+7. Commit `blogs.json`, the new image, and the generated output under `blog/` and `sw.js`.
+
+The build stops with an error if required fields, IDs, slugs, dates, or image
+paths are invalid.
+
 ## PWA
 
 This site is now configured as a production-ready static PWA while staying framework-free.

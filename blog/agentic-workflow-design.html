@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08111f">
+  <meta name="author" content="Ratish Nair">
+  <meta name="description" content="How to structure AI agents to think, act, collaborate, and improve systematically. Seven principles for production-grade agentic systems.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Agentic Workflow Design: Building Thinking Machines">
+  <meta property="og:description" content="How to structure AI agents to think, act, collaborate, and improve systematically. Seven principles for production-grade agentic systems.">
+  <meta property="og:url" content="https://ratishnair.co.in/blog/agentic-workflow-design.html">
+  <meta property="og:image" content="https://ratishnair.co.in/blog/og/agentic-workflow-design.png">
+  <meta property="og:image:alt" content="Agentic Workflow Design: Building Thinking Machines">
+  <meta property="article:published_time" content="2026-08-20">
+  <meta property="article:author" content="Ratish Nair">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+  <link rel="icon" href="/icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Agentic Workflow Design: Building Thinking Machines | Ratish Nair</title>
+</head>
+
+<body>
+  <header class="nav">
+    <a class="brand" href="/">RN</a>
+    <nav aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/#experience">Experience</a>
+      <a href="/#skills">Skills</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button id="theme" class="theme-btn" type="button" aria-label="Toggle dark mode">◐</button>
+  </header>
+
+  <main id="top">
+    <article class="blog-post">
+      <div class="blog-header">
+        <img src="/blog/og/agentic-workflow-design.png" alt="Agentic Workflow Design: Building Thinking Machines" class="blog-hero-image" loading="lazy">
+        <p class="blog-meta">August 20, 2026 · Agentic Workflow Design: Building Thinking Machines</p>
+        <h1>Agentic Workflow Design: Building Thinking Machines</h1>
+        <p class="blog-summary">How to structure AI agents to think, act, collaborate, and improve systematically. Seven principles for production-grade agentic systems.</p>
+      </div>
+      <div class="blog-content">
+        <h2>Beyond Single-Shot Prompts</h2><p>The first wave of AI applications treated LLMs as fancy autocomplete. You prompt, it responds, you're done. That works for copywriting. It breaks down when you need the AI to <em>reason through complexity</em>, <em>coordinate multiple steps</em>, and <em>recover from failures</em>.</p><p>Agentic workflows flip the model: instead of asking an LLM for an answer, you ask it to plan, delegate, verify, and improve.</p><h2>Seven Principles for Agentic Systems</h2><h3>1. Goal-Driven Specification</h3><p>Be explicit about what success looks like. Not inputs or outputs—outcomes. A vague goal produces vague behavior. An agent without a clear target will hallucinate its own purpose.</p><h3>2. Specialized Agent Design</h3><p>Each agent owns one responsibility well. A planning agent. An execution agent. A verification agent. This separation makes it easier to debug, test, and swap implementations.</p><h3>3. Orchestration, Not Chains</h3><p>Prompt chains are brittle. You go from step A to B to C linearly. Orchestration lets the system <em>choose</em> which agent to call next based on intermediate results. That's adaptive.</p><h3>4. Context and Memory</h3><p>Agents without memory repeat themselves. Without context, they work in isolation. Build systems where agents share a common understanding—through shared memory, decision logs, and previous outcomes.</p><h3>5. Result Verification</h3><p>Never trust a single pass. Have agents validate their own outputs before handing off. Did the code compile? Does the output match the spec? Did the plan actually work? Verification is the difference between experimental and production-ready.</p><h3>6. Human-in-the-Loop</h3><p>The best agentic systems don't remove humans—they amplify them. Humans approve critical decisions. Humans catch edge cases. Humans course-correct when the system drifts. Automation handles the predictable; humans handle the novel.</p><h3>7. Continuous Improvement</h3><p>Learn from every execution. What went wrong? What took longer than expected? Build feedback loops where agent behavior improves with every run.</p><h2>When This Matters</h2><p>Agentic workflows excel at:</p><ul><li>Code generation with validation loops (generate, test, fix)</li><li>Complex planning tasks requiring backtracking</li><li>Multi-step problem solving across domain boundaries</li><li>Systems that need to adapt their approach based on intermediate results</li></ul><p>They're overkill for simple classification or summarization. Pick the right tool for the complexity you're facing.</p>
+      </div>
+      <div class="blog-nav">
+        <div></div>
+        <a class="blog-nav-home" href="/blog/">Back to Blog</a>
+        <a class="blog-nav-next" href="/blog/microsoft-apm-agent-package-manager.html">Microsoft APM: Package Management for AI Agents →</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>© <span id="year"></span> Ratish Nair</footer>
+  <script src="/app.js"></script>
+</body>
+
+</html>
